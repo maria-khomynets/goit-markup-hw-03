@@ -28,6 +28,16 @@ ol {
   padding-left: 0;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
 /* налаштування контейнера */
 
 .container {
@@ -40,9 +50,11 @@ ol {
 /* стилі хедера */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.header-logo-page {
+  padding: 24px 0;
 }
 
 .header-container {
@@ -62,15 +74,14 @@ ol {
   gap: 40px;
 }
 
-.logo-nav-container {
-}
-
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -93,6 +104,10 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.contacts-item {
+  padding: 24px 0;
 }
 
 .contacts-link:hover,
@@ -162,7 +177,7 @@ ol {
   height: 600px;
   background-color: #2e2f42;
   text-align: center;
-  padding: 188px 472px 292px 472px;
+  padding: 188px 0;
 }
 
 .button {
@@ -191,9 +206,6 @@ button:focus {
 }
 
 /*------- секція  feature-------*/
-.feature-section {
-  padding: 99px 156px 120px 156px;
-}
 
 .feature-title {
   font-weight: 500;
@@ -210,11 +222,15 @@ button:focus {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+.feature-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
 /* --------секція команда------- */
 
 .team-section {
   background-color: #f4f4fd;
-  padding: 120px 156px 120px 156px;
 }
 
 .section-title {
@@ -233,6 +249,7 @@ button:focus {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-name {
@@ -254,13 +271,10 @@ button:focus {
 }
 
 .container-team-section {
-  padding: 16px 32px 16px 32px;
+  padding: 16px 32px;
 }
 
 /* --------секція портфоліо------- */
-.portfolio-section {
-  padding: 120px 156px 120px 156px;
-}
 
 .project-title {
   font-weight: 500;
@@ -278,8 +292,15 @@ button:focus {
 }
 
 .container-portfolio {
-  padding: 16px 32px 16px 32px;
+  padding: 32px 16px;
 }
+
+.portfolio-list-item {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  width: calc((100% - 2 * 24px) / 3);
+}
+
 /* -----футер----- */
 .footer-text {
   font-weight: 400;
@@ -292,7 +313,8 @@ button:focus {
 .footer {
   background-color: #2e2f42;
   padding-top: 100px;
-  padding-left: 100px;
+
+  padding-bottom: 100px;
 }
 
 /* домашнє завдання 3 */
@@ -310,5 +332,5 @@ button:focus {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
