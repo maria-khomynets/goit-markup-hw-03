@@ -104,6 +104,7 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
 }
 
 .contacts-item {
@@ -271,7 +272,7 @@ button:focus {
 }
 
 .container-team-section {
-  padding: 16px 32px;
+  padding: 32px 16px;
 }
 
 /* --------секція портфоліо------- */
@@ -293,6 +294,8 @@ button:focus {
 
 .container-portfolio {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-list-item {
